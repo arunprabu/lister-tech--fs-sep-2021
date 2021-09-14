@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Lister Technologies</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <header>
+    <img src="./assets/images/logo.png" alt="Lister Logo">
+
+    <nav id="primaryMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="marketing.html">Digital Marketing</a></li>
+        <li><a href="commerce.html">Digital Commerce</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <div id="location">
+      <section>
+        <h2>Locate us here in Google Maps</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10549.162252130849!2d80.24278546525284!3d12.966995029314113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d6d9eb3dbc5%3A0x8b7737d1feb6fa3!2sLister%20Technologies!5e0!3m2!1sen!2sin!4v1631525635388!5m2!1sen!2sin"
+          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+
+      <section>
+        <h2>Reach us here</h2>
+        <address>
+          <strong>Lister Technologies</strong><br>
+          8th Floor, Global Infocity Park, <br>
+          #40, Dr, MGR Main Rd, <br>
+          Perungudi, <br>
+          Chennai, Tamil Nadu 600096 <br>
+          <abbr title="Phone">Contact: </abbr>
+          (+91)-44-4599-2000
+        </address>
+      </section>
+    </div>
+
+    <section>
+      <h3>Send in your queries... or say a hi....</h3>
+      <form method="POST" action="https://jsonplaceholder.typicode.com/users">
+        <fieldset>
+          <legend> Personal Details </legend>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required>
+          <br><br>
+
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" required>
+          <br><br>
+
+          <label for="orgn">Organization:</label>
+          <input type="text" id="orgn" name="orgn" required>
+          <br><br>
+
+          <label for="job">Job Title:</label>
+          <input type="text" id="job" name="job" required>
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+          <br><br>
+
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" id="male" value="Male" required>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="Female" required>
+          <label for="female">Female</label>
+          <br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Other Details</legend>
+          <label for="favcolor">Favourite Color:</label><br>
+          <input type="color" name="favcolor">
+          <br><br>
+
+          <label for="range">Interest level:</label><br>
+          <input type="range" min="0" max="5">
+          <br><br>
+
+          <label for="photo">Upload Profile photo:</label><br>
+          <input type="file" name="photo" accept="image/jpeg , image/png">
+          <br><br>
+
+          <label for="query">Nature of Query:</label><br>
+          <select>
+            <option selected value="">--Select--</option>
+            <option value="1">I need a solution</option>
+            <option value="2">I have a query</option>
+            <option value="3">Feedback</option>
+          </select>
+          <br><br>
+
+          <label for="qtext">Query:</label><br>
+          <textarea name="qtext" placeholder="Enter your query here"></textarea>
+          <br><br>
+
+          <input type="checkbox" name="agree" id='agree'>
+          <label for="agree">I agree to the Terms and Conditions</label>
+          <br><br>
+
+          <input type="submit" value="Submit Form">
+          <input type="reset" value="Reset values">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="marketing.html">Digital Marketing</a></li>
+        <li><a href="commerce.html">Digital Commerce</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p style="color: red; background-color: yellow;">Copyright 2021</p>
+  </footer>
+</body>
+
+</html>
