@@ -56,8 +56,11 @@ body {
 }
 
 main{
+  clear: both;
   width: 76%;
-  margin: 0 auto;
+  height: 100%;
+  overflow: auto;
+  margin: 70px auto 0;
   /* margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
@@ -75,6 +78,10 @@ main{
 .text-center{
   text-align: center;
 }
+.clear-floats{
+  clear: both;
+}
+
 /* Util css classes Ending */
 
 
@@ -113,11 +120,20 @@ h6{
 /* Element Selector */
 nav ul li{
   display: inline;
+  padding: 10px;
+}
+
+nav ul li a{
+  color: #545454;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* ID Selector */
 #primaryMenu {
-  border: 1px solid whitesmoke;
+  float: right;
+  margin: 20px;
   /* border-width: 1px;
   border-style: solid; 
   border-color:whitesmoke; */
@@ -130,3 +146,81 @@ nav ul li{
   padding: 12px 0;
 }
 
+#listerLogo{
+  float: left;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.news, .join-us{
+  width: 46%;
+  float: left;
+  height: 225px;
+  position: relative;
+}
+
+.news{
+  background-image:url('../assets/images/update1-bg.jpeg');
+  margin-right:2%;
+}
+
+.join-us{
+  background-image: url('../assets/images/update2-bg.jpeg');
+  margin-left:2%;
+}
+
+.article-title, .article-excerpt{
+  color: #fff;
+  text-align: center;
+}
+.article-title{
+  margin-top: 50px;
+}
+
+.article-excerpt{
+  position: absolute;
+  line-height: 26px;
+  bottom: 20px;
+  text-align: right;
+  width: 96%;
+  font-size: 22px;
+}
+
+.topMenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 0 20px 3px #c5c4ca;
+}
+
+.c2a{
+  background-image: url('../assets/images/contact_banner.jpeg');
+  margin-top:50px;
+  height: 210px;
+}
+
+.c2a h2{
+  font-size: 34px;
+  color: #fff;
+  padding-top: 40px;
+}
+.c2a button{
+  background-color: #007FFF;
+  border: solid 1px #007FFF;
+  padding: 10px 50px;
+  font-size: 28px;
+  color: #fff;
+  border-radius: 39px;
+  margin-top: 16px;
+}
+
+footer{
+  width: calc(60% - 10px);
+  padding: 10%;
+  border: solid 5px red;
+  margin: 10%;
+}
