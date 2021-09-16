@@ -257,3 +257,54 @@ footer{
   padding: 70px 10px;
 }
 
+
+/* Contact PAge related */
+#contactForm{
+  margin: 0 auto;
+  width: 45%;
+}
+
+#contactForm label{
+  width: 120px;
+  display: inline-block;
+  padding: 10px;
+}
+
+#contactForm input, #contactForm select, #contactForm textarea{
+  padding: 10px 12px;
+  width: 200px;
+  border: solid 1px #545454;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Attribute Selector */
+#contactForm input[type='color']{
+  padding: 0;
+  width: 50px;
+}
+
+#contactForm input[type='radio'], #contactForm input[type='checkbox']{
+  width:auto;
+}
+
+#contactForm .radio-label{
+  width: 40px;
+  padding-right: 12px;
+}
+
+#contactForm input[type='file']{
+  border: none;
+  font-size: 18px;
+}
+
+#contactForm .agreement{
+  width: 400px;
+}
+
+/* TODO: Learn about pseudo selector 
+-- using that, add mouseover effect for the button, 
+-- have focus,active styling for inputs 
+*/
+
+/* TODO: have table 
+highlight odd and even rows in different bg color with mouseover effect also*/

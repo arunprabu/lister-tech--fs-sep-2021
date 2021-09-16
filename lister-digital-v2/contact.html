@@ -51,7 +51,7 @@
 
     <section>
       <h3>Send in your queries... or say a hi....</h3>
-      <form method="POST" action="https://jsonplaceholder.typicode.com/users">
+      <form id="contactForm" method="POST" action="https://jsonplaceholder.typicode.com/users">
         <fieldset>
           <legend> Personal Details </legend>
           <label for="fname">First name:</label>
@@ -80,27 +80,27 @@
 
           <label for="gender">Gender:</label>
           <input type="radio" name="gender" id="male" value="Male" required>
-          <label for="male">Male</label>
+          <label for="male" class="radio-label">Male</label>
           <input type="radio" name="gender" id="female" value="Female" required>
-          <label for="female">Female</label>
+          <label for="female" class="radio-label">Female</label>
           <br>
         </fieldset>
         <br>
         <fieldset>
           <legend>Other Details</legend>
-          <label for="favcolor">Favourite Color:</label><br>
+          <label for="favcolor">Favourite Color:</label>
           <input type="color" name="favcolor">
           <br><br>
 
-          <label for="range">Interest level:</label><br>
+          <label for="range">Interest level:</label>
           <input type="range" min="0" max="5">
           <br><br>
 
-          <label for="photo">Upload Profile photo:</label><br>
+          <label for="photo">Upload Profile photo:</label>
           <input type="file" name="photo" accept="image/jpeg , image/png">
           <br><br>
 
-          <label for="query">Nature of Query:</label><br>
+          <label for="query">Nature of Query:</label>
           <select>
             <option selected value="">--Select--</option>
             <option value="1">I need a solution</option>
@@ -109,12 +109,12 @@
           </select>
           <br><br>
 
-          <label for="qtext">Query:</label><br>
-          <textarea name="qtext" placeholder="Enter your query here"></textarea>
+          <label for="qtext">Query:</label>
+          <textarea name="qtext" placeholder="Enter your query here" cols="300" rows="10"></textarea>
           <br><br>
 
           <input type="checkbox" name="agree" id='agree'>
-          <label for="agree">I agree to the Terms and Conditions</label>
+          <label for="agree" class="agreement">I agree to the Terms and Conditions</label>
           <br><br>
 
           <input type="submit" value="Submit Form">
