@@ -1,10 +1,17 @@
 /* External Styles */
 
+/* Embedding Font */
+@font-face {
+  font-family: 'AkkuratBold';
+  src: url('../assets/fonts/Akkurat-Bold.ttf') format("truetype");
+}
+
 /* Reset Styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,7 +59,7 @@ table {
 /* Reset Style Ends */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'AkkuratBold', Arial;
 }
 
 main{
@@ -274,7 +281,7 @@ footer{
   padding: 10px 12px;
   width: 200px;
   border: solid 1px #545454;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'AkkuratBold', Arial;
 }
 
 /* Attribute Selector */
@@ -308,3 +315,94 @@ footer{
 
 /* TODO: have table 
 highlight odd and even rows in different bg color with mouseover effect also*/
+
+
+/* Responsive Web Design */
+/* Using CSS3 Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    background-color: lightcoral;
+  }
+  #primaryMenu{
+    display: none;
+  }
+  .hamburgerIcon{
+    display: block;
+  }
+  main{
+    width: 90%;
+  }
+  .news, .join-us{
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  .join-us{
+    margin-left: 0;
+  }
+  .article-title{
+    font-size: 20px;
+  }
+
+  .article-excerpt{
+    font-size: 17px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body{
+    background-color: yellow;
+  }
+  #primaryMenu{
+    display: none;
+  }
+  .hamburgerIcon{
+    display: block;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body{
+    background-color: lightgreen;
+  }
+  #primaryMenu{
+    display: block;
+  }
+  .hamburgerIcon{
+    display: none;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body{
+    background-color: lightpink;
+  }
+  #primaryMenu{
+    display: block;
+  }
+  .hamburgerIcon{
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops, desktops and TVs, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body{
+    background-color: lightskyblue;
+  }
+  #primaryMenu{
+    display: block;
+  }
+  .hamburgerIcon{
+    display: none;
+  }
+}
