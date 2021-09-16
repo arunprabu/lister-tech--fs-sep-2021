@@ -224,3 +224,36 @@ footer{
   border: solid 5px red;
   margin: 10%;
 }
+
+/* Leadership related */
+.dp-left, .dp-right{
+  clear: both;
+  height: 100%;
+  overflow: auto;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #007FFF;
+}
+
+.dp-left figure{
+  float:left;
+  width: 20%;
+}
+
+.dp-left p{
+  float: left;
+  width: calc(80% - 20px);
+  padding: 70px 10px;
+}
+
+.dp-right figure{
+  float: right;
+  width:20%;
+}
+
+.dp-right p{
+  float: right;
+  width: calc(80% - 20px);
+  padding: 70px 10px;
+}
+
