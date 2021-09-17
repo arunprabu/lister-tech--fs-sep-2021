@@ -1,0 +1,28 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+button{
+  background-color: $primary-color;
+}
+
+nav#topMenu{
+  color: #fff;
+  ul{
+    display: block;
+    li{
+      display: inline;
+      padding: 10px;
+      a{
+        color: #545454;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -125,6 +125,14 @@ h6{
 }
 
 /* Element Selector */
+nav{
+  color: #fff;
+}
+
+nav ul{
+  display: block;
+}
+
 nav ul li{
   display: inline;
   padding: 10px;
