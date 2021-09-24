@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+</head>
+
+<body>
+  <h1>About Page- HTML 5 API's Demo</h1>
+  <button type="button" onclick="handleDispatchIt()">Dispatch it</button>
+
+  <br><br>
+  <h2>Drag and Drop </h2>
+  <img id="img1" src="assets/images/instagram.png" width="100" draggable="true" ondragstart="handleDrag(event)">
+
+  <div style="border:solid 1px red; height:150px;" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+    Drop here
+  </div>
+
+
+  <h2>Geolocation</h2>
+  <button type="button" onclick="handleLocateMe()">Locate Me</button>
+
+  <script>
+
+    function handleDrag(event) {
+      console.log(event); // event.target is the element being dragged
+
+      event.dataTransfer.setData('xyz', event.target.id);  //id is img1
+      console.log('Dragging');
+    }
+
+    function handleDragOver(event) {
+      console.log(event);
+      // allowing drop
+      // by preventing the default nature of the event
+      event.preventDefault();
+    }
+
+    function handleDrop(event) {
+      console.log(event); // event.target is the dropped region
+      event.preventDefault();
+      console.log('Dropping inside the div');
+
+      var draggedItem = event.dataTransfer.getData('xyz');
+      console.log(draggedItem); // img1
+      event.target.appendChild(document.getElementById(draggedItem));
+
+    }
+  
+    
+    function handleLocateMe(){
+      // check whether browser is supporting to gelocation or not 
+      if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showLocation, locationAccessDenied)
+        
+      }else{
+        alert('Browser does not support geolocation');
+      }
+    }
+
+    function showLocation(position){
+      console.log(position);
+      console.log('You are in ' + position.coords.latitude  + ' and ' + position.coords.longitude);
+
+      // navigator.geolocation.watchPosition(watchingPosition, watchingError)
+    }
+
+    function locationAccessDenied(){
+      alert('locationAccessDenied');
+    }
+
+
+    if(Storage){
+      localStorage.setItem('phone', 2342423);
+    }
+
+  </script>
+</body>
+
+</html>
