@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from 'react'; // core react package imported from node_modules
+import ReactDOM from 'react-dom'; // to render component into html
+import './index.css'; // custom import of css file
+import App from './App'; // importing App Component to render using ReactDOM
 import reportWebVitals from './reportWebVitals';
 
+// React DOM is rendering App Component 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  ,
   document.getElementById('root')
 );
 
