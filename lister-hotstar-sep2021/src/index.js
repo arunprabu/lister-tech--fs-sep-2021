@@ -1,5 +1,6 @@
 import React from 'react'; // core react package imported from node_modules
 import ReactDOM from 'react-dom'; // to render component into html
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importing Bootstrap CSS -- Global CSS
 import './index.css'; // custom import of css file
 import App from './App'; // importing App Component to render using ReactDOM
 import reportWebVitals from './reportWebVitals';
