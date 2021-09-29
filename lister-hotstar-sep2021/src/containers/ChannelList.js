@@ -7,6 +7,7 @@ class ChannelList extends Component {
   // Do not mutate state directly. Use setState()
   // Mutating the state directly will not re-render.
   // Mutating the state using setState() will re-render
+  // to update the UI -- you need to use setState()
   state = { 
     tvChannelList: [
       {
@@ -37,8 +38,10 @@ class ChannelList extends Component {
     });
   }
 
-  handleAddToFav = () => {
-    this.setState( {
+  handleAddToFav = (data) => { // data is passed from child comp. 
+    console.log('Inside handleAddToFav');
+    // console.log(data); // data is passed from child comp. 
+    this.setState({
       tvChannelList: [
         {
           name: 'Star Sports [Added]', 
@@ -64,6 +67,7 @@ class ChannelList extends Component {
 
   render() {
     console.log('Inside Render');
+    console.log(this.state.tvChannelsCount);
     return (
       <div className="row">
         <h2>Channel List | States and Events Demo</h2>

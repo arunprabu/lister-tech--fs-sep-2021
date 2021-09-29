@@ -12,6 +12,11 @@ const Program = (props) => { // receive the props from parent comp
 
   console.log(props);
 
+  const handleWatchThis = (event) => {
+    console.log(event);
+    event.target.innerText = 'Watching...';
+  }
+
   return (
     <div className="card mb-3">
       <div className="card-header">
@@ -21,7 +26,7 @@ const Program = (props) => { // receive the props from parent comp
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
         <p className="card-text">{props.children}</p>
-        <button className="btn btn-primary">Watch this...</button>
+        <button className="btn btn-primary" onClick={handleWatchThis}>Watch this...</button>
       </div>
       <div className="card-footer">
         {props.time}

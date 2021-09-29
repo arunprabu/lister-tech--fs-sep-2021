@@ -4,6 +4,10 @@ const Channel = (props) => {
 
   console.log(props);
 
+  // const handleClickMe = () => {
+  //   console.log('handleClickMe');
+  //   props.addToFav("Wow"); // data is sent to parent comp
+  // }
 
   return (
     <div className="col-md-3">
@@ -12,7 +16,8 @@ const Channel = (props) => {
         <div className="card-body">
           <h5 className="card-title">{props.name}</h5>
           <p className="card-text">{props.children}</p>
-          <button className="btn btn-primary" onClick={props.addToFav}>Add to Fav</button>
+          <button className="btn btn-primary" 
+            onClick={props.addToFav}>Add to Fav</button>
         </div>
       </div>
     </div>
