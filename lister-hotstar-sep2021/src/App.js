@@ -6,6 +6,9 @@ import ProgramList from './containers/ProgramList';
 import ChannelList from './containers/ChannelList';
 import TrendingShows from './containers/TrendingShows';
 import Subscription from './components/Subscription';
+import LatestNews from './containers/LatestNews';
+import MyProfile from './containers/MyProfile';
+import ContactForm from './containers/ContactForm';
 
 // App Comp is defined. 
 function App() {
@@ -27,6 +30,13 @@ function App() {
           <TrendingShows />
           <hr/>
           <Subscription />
+          <hr/>
+          <LatestNews feature="Lifecycle Hooks" />
+          <hr/>
+          <MyProfile />
+          <hr />
+          <ContactForm />
+          
           
         </div>
       </div>
