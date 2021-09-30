@@ -9,6 +9,7 @@ import Subscription from './components/Subscription';
 import LatestNews from './containers/LatestNews';
 import MyProfile from './containers/MyProfile';
 import ContactForm from './containers/ContactForm';
+import WithLastLogin from './hoc/WithLastLogin';
 
 // App Comp is defined. 
 function App() {
@@ -36,7 +37,17 @@ function App() {
           <MyProfile />
           <hr />
           <ContactForm />
-          
+          <hr />
+
+          <WithLastLogin>
+            <div>Wow</div>
+            <div>Wow2</div>
+          </WithLastLogin>
+
+          <WithLastLogin>
+            <p>Last Login: yesterday </p>
+          </WithLastLogin>
+
           
         </div>
       </div>
