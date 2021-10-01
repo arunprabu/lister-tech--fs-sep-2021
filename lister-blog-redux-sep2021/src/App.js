@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Blog from './components/Blog';
 import About from './components/About';
 import Contact from './components/Contact';
+import PostDetails from './components/PostDetails';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Switch>
             {/* Configure the routes */}
             <Route path='/' component={Home} exact/>
-            <Route path='/blog' component={Blog} />
+            <Route path='/blog' component={Blog} exact/>
+            <Route path='/blog/:id' component={PostDetails} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
           </Switch>

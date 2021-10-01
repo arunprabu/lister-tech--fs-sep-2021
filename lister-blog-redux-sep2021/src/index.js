@@ -5,8 +5,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 //Step 1. Setup the the Redux Store here
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 
 // Step 5: //let’s import the combinedReducer 
 //and pass it to the store as an argument.
@@ -20,8 +21,13 @@ import { Provider } from 'react-redux';
       //that needs to access it without the need to pass props.
       //Provider should be imported from react-redux 
 
+// Step 14: Setting up logger and thunk middlewear
+import logger from 'redux-logger'; // npm i redux-logger 
+import thunk from 'redux-thunk';  //npm i redux-thunk
+
 // Step 2: Exec createStore() method and save it in a variable 
-const store = createStore(rootReducer); //this needs a special argument called 'reducer'
+const store = createStore(rootReducer, applyMiddleware(thunk, logger) ); //this needs a special argument called 'reducer'
+// use redux-thunk middleware for async actions -- and logger middleware for logs
 
 // Step 6: Provide the store data to the entire app 
 

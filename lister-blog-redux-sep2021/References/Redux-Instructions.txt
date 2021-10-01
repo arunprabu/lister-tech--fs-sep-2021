@@ -1,3 +1,6 @@
+Github Link: https://github.com/arunprabu/blog-crud-redux-trivium
+
+
 Redux 
 ---
 Step 0: 
@@ -146,7 +149,7 @@ Step 8:
 
 Step 9:
   Almost done... 
-  to dispatch action, let's write form submit logic in PostForm.js
+  to dispatch action, let's write form submit logic in AddPost.js
 
   // Step 9.1
   form code can be  the following with ref's and submission logic 
@@ -173,14 +176,14 @@ Step 9:
     }
 
 Step 10:
-  In the same PostForm.js component, 
+  In the same AddPost.js component, 
   import {connect} from 'react-redux';
   
   // Step 10.1
   //last line of the compoent should be the following. 
   // after connecting props will be available in this component. 
   
-  export default connect()(PostForm); 
+  export default connect()(AddPost); 
 
 Step 11: 
   It is time to dispatch actions from form submission logic 
@@ -235,7 +238,7 @@ Step 12:
 
 ======
 Step 13: 
-  Dispatch the action in PostForm.js submission logic
+  Dispatch the action in AddPost.js submission logic
 
   import { createPost } from '../../services/postService';
 
