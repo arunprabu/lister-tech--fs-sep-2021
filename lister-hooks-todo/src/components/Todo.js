@@ -1,4 +1,4 @@
-import React, { useRef, useReducer } from 'react';
+import React, { useRef, useReducer, useEffect } from 'react';
 import todoReducer from '../reducers/todoReducer';
 
 const Todo = () => {
@@ -10,6 +10,12 @@ const Todo = () => {
   const [todoState, todoDispatch] = useReducer(todoReducer, []);
 
   console.log(todoState); // will have todoArray
+
+  useEffect( () => {
+    todoDispatch({
+      type: 'GET_TODOS'
+    })
+  }, []);
 
   const handleAddTodo = () => {
     // read form field data

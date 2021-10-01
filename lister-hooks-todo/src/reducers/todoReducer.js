@@ -3,7 +3,6 @@
 
 const todoReducer = ( state = [], action) => {
   // working with action type
-  debugger;
   switch(action.type){
     case 'ADD_TODO':
       return [ 
@@ -16,7 +15,11 @@ const todoReducer = ( state = [], action) => {
       ]; 
     
     case 'GET_TODOS':
-      return state;
+      return [{
+        id: 1,
+        text: 'wow',
+        completed: false
+      }];
     
     case 'EDIT_TODOS':
       return state;
