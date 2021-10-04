@@ -19,7 +19,7 @@ const Todo = () => {
 
   const handleAddTodo = () => {
     // read form field data
-    console.log(todoInput.current.value);
+    console.log(todoInput.current.value); 
 
     // dispatching action to hit the reducer
     todoDispatch( {
@@ -27,6 +27,8 @@ const Todo = () => {
                   data: todoInput.current.value
                 });
   }
+
+    
 
   let todoList = null;
   todoList = todoState.map( (todo, index) => {
