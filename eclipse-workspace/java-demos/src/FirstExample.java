@@ -1,3 +1,5 @@
+import com.examples.java.dashboard.MyPackageDemo;
+
 public class FirstExample {
 	// variables can be here
 	
@@ -8,6 +10,10 @@ public class FirstExample {
 	public static void main(String[] args) {
 		// we are printing Hello World
 		System.out.println("Hello World");
+		
+		MyPackageDemo mpd = new MyPackageDemo();
+		
+		mpd.dashboard();
 	}
 }
 
